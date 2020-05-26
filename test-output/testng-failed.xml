@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [test suite]">
+  <listeners>
+    <listener class-name="com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter"/>
+  </listeners>
+  <test thread-count="5" name="test(failed)">
+    <classes>
+      <class name="amazn.Base">
+        <methods>
+          <include name="teardown"/>
+          <include name="getUrl"/>
+          <include name="driverInit"/>
+          <include name="scenarioOne"/>
+          <include name="driverTeardown"/>
+        </methods>
+      </class> <!-- amazn.Base -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [test suite] -->
